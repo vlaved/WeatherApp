@@ -29,16 +29,27 @@
                                     <constraint firstAttribute="width" constant="150" id="gxc-yi-XNq"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRC-OL-B39">
+                                <rect key="frame" x="138" y="499" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get weather"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CRC-OL-B39" firstAttribute="top" secondItem="jNm-W2-igK" secondAttribute="bottom" constant="84" id="2n1-gt-5tk"/>
                             <constraint firstItem="L9z-9a-bKo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="DoC-ug-Jq2"/>
                             <constraint firstItem="L9z-9a-bKo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I8B-Zv-pYe"/>
                             <constraint firstItem="jNm-W2-igK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iug-fg-dRW"/>
                             <constraint firstItem="jNm-W2-igK" firstAttribute="top" secondItem="L9z-9a-bKo" secondAttribute="bottom" constant="72" id="OtK-vG-1hB"/>
+                            <constraint firstItem="CRC-OL-B39" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QIa-9n-CzL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getWeatherButton" destination="CRC-OL-B39" id="2En-Vu-Dm2"/>
+                        <outlet property="weatherLabel" destination="L9z-9a-bKo" id="f9l-NZ-oOu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
